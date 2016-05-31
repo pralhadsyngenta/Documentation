@@ -86,7 +86,7 @@ git clone https://github.com/acquia-pso/syngenta
 ```
 This assumes you cloned the repo in your home dir `[/home/username/syngenta]`
 
-### 2.11 Run `composer install`
+### 2.11 Run 'composer install'
 Commands:
 ```
 cd syngenta
@@ -138,3 +138,5 @@ drush @syngentacp.local.default en syn_user -y
 
 drush @syngentacp.local.poc si syn_country -y
 ```
+## Known issues
+TBD
