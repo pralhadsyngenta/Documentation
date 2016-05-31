@@ -96,8 +96,8 @@ composer install
 ### 2.12 PHP 5.6 changes to config.yml
 Reference URL - http://docs.drupalvm.com/en/latest/other/php-56/#ubuntu-1404 
 * Make necessary changes to 'box/config.yml' as mentioned on the url above.
-** This step is required only because of the conflict in Ansible Roles & Packages.
-** Once this issue is resolved then this step will no longer be required. 
+* This step is required only because of the conflict in Ansible Roles & Packages.
+* Once this issue is resolved then this step will no longer be required. 
 
 ### 2.13 Vagrant up
 Go inside `[syngenta/box]`
