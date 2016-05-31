@@ -82,9 +82,9 @@ Reference URL - https://help.github.com/articles/generating-a-new-ssh-key-and-ad
 ### 2.10 Clone code-repo on local machine
 Commands:
 ```
-git clone https://github.com/acquia-pso/syngenta
+git clone https://github.com/repo
 ```
-This assumes you cloned the repo in your home dir `[/home/username/syngenta]`
+This assumes you cloned the repo in your home dir `[/home/username/drupalvm]`
 
 ### 2.11 Run 'composer install'
 Commands:
@@ -100,10 +100,10 @@ Reference URL - http://docs.drupalvm.com/en/latest/other/php-56/#ubuntu-1404
 * Once this issue is resolved then this step will no longer be required. 
 
 ### 2.13 Vagrant up
-Go inside `[syngenta/box]`
+Go inside `[drupalvm]`
 Commands:
 ```
-cd syngenta/box
+cd drupalvm
 vagrant up
 ```
 This command will download and install Ansibles roles and the packages.
@@ -123,20 +123,5 @@ memory_limit = 256M
 Without these changes DRUSH commands might fail as those are quite heavy on resource consumption.
 
 ### 2.16 Synced folders
-* Base Operating System: `[home/[user-name]/syngenta/sites]`
-* VirtualBox Instance: `[/var/www/syngenta/docroot]`
-
-### 2.17 Follow [Onboarding Document] from the github repo.
-
-Follow the instructions on - `https://github.com/acquia-pso/syngenta/blob/dev/docs/onboarding.md` 
-
-* Site Creation
-```
-drush @syngentacp.local.default si syn_country -y
-drush @syngentacp.local.das si syn_das -y
-drush @syngentacp.local.default en syn_user -y
-
-drush @syngentacp.local.poc si syn_country -y
-```
-## Known issues
-TBD
+* Base Operating System: `[home/[user-name]/Sites/drupalvm]`
+* VirtualBox Instance: `[/var/www/drupalvm]`
