@@ -1,4 +1,4 @@
-# Setting up Development Environment
+# Setting up Development Environment on Local Machine
 
 ## 1. Pre-requisites
 * Base operating system must be Ubuntu 14.04. These steps can also be used on CentOS, RHEL and iOS with little changes.
